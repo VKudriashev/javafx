@@ -1,0 +1,27 @@
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Chilanka";
+    -fx-text-background-color: #2A5058;
+}
+
+.button {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Chilanka";
+    -fx-background-color: #CCFF99;
+    -fx-text-fill: #2A5058;
+}
+
+.tree-table-view {
+    -fx-background-color: transparent;
+    -fx-selection-bar: -fx-base;
+    -fx-padding: 5;
+    -fx-control-inner-background: #ced7e1;
+}
+
+.tree-table-row-cell:selected {
+    -fx-background-color: #eade5d;
+}
+
+.tree-table-row-cell:odd {
+    -fx-background: derive(-fx-control-inner-background, -10%);
+}

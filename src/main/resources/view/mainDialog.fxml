@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="500.0" prefHeight="400.0" prefWidth="500.0"
+            stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.testfxlab.controller.MainController">
+    <bottom>
+        <ButtonBar prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#create" text="Add" />
+                <Button mnemonicParsing="false" onAction="#edit" text="Edit" />
+                <Button mnemonicParsing="false" onAction="#delete" text="Delete" />
+            </buttons>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets right="20.0" />
+            </padding>
+        </ButtonBar>
+    </bottom>
+    <center>
+        <TreeTableView fx:id="mainTable" prefHeight="200.0" showRoot="false" BorderPane.alignment="CENTER">
+            <columns>
+                <TreeTableColumn editable="false" prefWidth="-1.0" resizable="false" text="Full Name">
+                    <columns>
+                        <TreeTableColumn fx:id="firstNameColumn" editable="false" prefWidth="115.0" resizable="false" text="First Name" />
+                        <TreeTableColumn fx:id="lastNameColumn" editable="false" prefWidth="115.0" resizable="false" sortable="false" text="Second Name" />
+                    </columns>
+                </TreeTableColumn>
+                <TreeTableColumn fx:id="ageColumn" editable="false" prefWidth="60.0" resizable="false" sortable="false" text="Age" />
+                <TreeTableColumn fx:id="birthdayColumn" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Birthday" />
+            </columns>
+        </TreeTableView>
+    </center>
+</BorderPane>
